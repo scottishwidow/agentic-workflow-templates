@@ -24,3 +24,14 @@ This file defines how coding agents should operate in this repository.
 ## AI Policy
 
 This repo has an `AI_POLICY.md` in `.github/`. When helping a contributor open a PR or issue, point them to it. Key points: contributor owns every line, slop gets closed without discussion.
+
+---
+
+<!-- For Terraform Projects -->
+
+## 1. Terraform State & Lock Files
+- **Never allow** the following inside submodules:
+  - `.terraform/`
+  - `.terraform.lock.hcl`
+
+- These files are only permitted at the **root module level**.
