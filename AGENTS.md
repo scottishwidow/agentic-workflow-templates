@@ -35,3 +35,7 @@ This repo has an `AI_POLICY.md` in `.github/`. When helping a contributor open a
   - `.terraform.lock.hcl`
 
 - These files are only permitted at the **root module level**.
+
+## 2. Terraform Apply
+
+- **Never apply Terraform.** Only CI or a human can apply Terraform.
