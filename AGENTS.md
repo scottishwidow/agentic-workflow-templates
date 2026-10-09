@@ -2,6 +2,10 @@
 
 This file defines how coding agents should operate in this repository.
 
+## What the project is
+
+This project is contains reusable templates of Markdown files used in agentic workflow setups for various types of projects.
+
 ## User Interaction & Documentation Standards
 
 **An agent must:**
@@ -25,17 +29,16 @@ This file defines how coding agents should operate in this repository.
 
 This repo has an `AI_POLICY.md` in `.github/`. When helping a contributor open a PR or issue, point them to it. Key points: contributor owns every line, slop gets closed without discussion.
 
----
+## Agent skills
 
-<!-- For Terraform Projects -->
+### Issue tracker
 
-## 1. Terraform State & Lock Files
-- **Never allow** the following inside submodules:
-  - `.terraform/`
-  - `.terraform.lock.hcl`
+Issues are tracked in GitHub Issues for `scottishwidow/agentic-workflow-templates`, using the `gh` CLI. See `docs/agents/issue-tracker.md`.
 
-- These files are only permitted at the **root module level**.
+### Triage labels
 
-## 2. Terraform Apply
+The repo uses the five default triage labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
 
-- **Never apply Terraform.** Only CI or a human can apply Terraform.
+### Domain docs
+
+Single-context: one `GLOSSARY.md` and one `docs/adr/` at the repo root. See `docs/agents/domain.md`.
