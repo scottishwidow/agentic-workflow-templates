@@ -31,19 +31,19 @@ This file defines how coding agents should operate in this repository.
 
 This repo has an `AI_POLICY.md` in `.github/`. When helping a contributor open a PR or issue, point them to it. Key points: contributor owns every line, slop gets closed without discussion.
 
+## Security
+
+Before adding, removing, or changing a dependency, read `SECURITY.md` and obey its supply-chain rules.
+
 ---
 
-<!-- For Terraform Projects -->
+<!-- BEGIN: Terraform projects -->
 
-## 1. Terraform State & Lock Files
-- **Never allow** the following inside submodules:
-  - `.terraform/`
-  - `.terraform.lock.hcl`
+## Terraform
 
-- These files are only permitted at the **root module level**.
+**An agent must:**
 
-## 2. Terraform Apply
-
+- **Never allow** `.terraform/` or `.terraform.lock.hcl` inside submodules. These files are permitted only at the root module level.
 - **Never apply Terraform.** Only CI or a human can apply Terraform.
 
-<!-- For Terraform Projects -->
+<!-- END: Terraform projects -->

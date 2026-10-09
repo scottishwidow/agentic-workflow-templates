@@ -4,7 +4,11 @@ This file defines how coding agents should operate in this repository.
 
 ## What the project is
 
-This project is contains reusable templates of Markdown files used in agentic workflow setups for various types of projects.
+This project contains reusable templates of Markdown files used in agentic workflow setups for various types of projects.
+
+Each directory in `templates/` has the same layout as the root of a target repo. Copy its contents into the target repo as-is.
+
+**Files in `templates/` are templates for other repos.** Their rules do not apply to this repo. Do not fill their placeholders.
 
 ## User Interaction & Documentation Standards
 
