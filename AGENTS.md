@@ -6,9 +6,26 @@ This file defines how coding agents should operate in this repository.
 
 This project contains reusable templates of Markdown files used in agentic workflow setups for various types of projects.
 
-Each directory in `templates/` has the same layout as the root of a target repo. Copy its contents into the target repo as-is.
-
 **Files in `templates/` are templates for other repos.** Their rules do not apply to this repo. Do not fill their placeholders.
+
+### Template directories
+
+| Directory | Target | Content |
+|---|---|---|
+| `templates/common/` | Root of a target repo | Sections for the `AGENTS.md` / `CLAUDE.md` of a repo, and supporting files. Copy the files, then keep only the sections that apply to the repo. |
+| `templates/global/` | User-level agent configuration directory, for example `~/.claude/` | Rules that apply to the whole system, in every project. |
+| `templates/obsidian/` | Folder in an Obsidian vault | Note-structure rules. |
+
+### Editing templates
+
+- Put a rule in `templates/global/` only when it applies at system level, outside any single repo.
+- In `templates/common/AGENTS.md`, put a project-agnostic rule outside the marker blocks. Put a rule for one project type inside a marker block, after the `---` divider at the end of the file:
+
+  ```markdown
+  <!-- BEGIN: <Type> projects -->
+  ...
+  <!-- END: <Type> projects -->
+  ```
 
 ## User Interaction & Documentation Standards
 
