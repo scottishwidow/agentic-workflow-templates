@@ -1,8 +1,6 @@
 # Security Policy
 
-## Reporting a Vulnerability
-
-<!-- How to report a vulnerability: contact address or private advisory link, expected response time -->
+<!-- Ask agent to tweak the security policy based on context of a particular project (e.g., `package-lock.json` doesn't apply to Terraform) -->
 
 ## Supply-Chain Hygiene
 

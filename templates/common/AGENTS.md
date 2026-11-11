@@ -2,8 +2,6 @@
 
 This file defines how coding agents should operate in this repository.
 
-<!-- Short project description -->
-
 ## What the project is
 
 <!-- Short project description -->
@@ -34,6 +32,8 @@ This repo has an `AI_POLICY.md` in `.github/`. When helping a contributor open a
 
 ## Security
 
+<!-- Security Rules can be added to this block inline as an alternative -->
+
 Before adding, removing, or changing a dependency, read `SECURITY.md` and obey its supply-chain rules.
 
 ## Git
@@ -47,7 +47,7 @@ Before adding, removing, or changing a dependency, read `SECURITY.md` and obey i
 - **Get explicit user approval before a destructive git command**, for example `git reset --hard`, `git checkout -- .`, `git restore .`, `git clean`, `git stash drop`, or `git push --force`.
 - **Commit only project files**: code, tests, requested documentation, and schemas. Keep to-do lists, research notes, and scratch files out of commits.
 - **Let pre-commit hooks run.** Fix the cause of a hook failure. Never use `--no-verify`.
-- **Check https://www.githubstatus.com/** before you retry or change anything after an unexplained git or GitHub failure.
+- **Check <https://www.githubstatus.com/>** before you retry or change anything after an unexplained git or GitHub failure.
 - **Fix review findings and incomplete work in the open PR.** Open a follow-up issue only for work deferred from a feature that is already merged.
 
 ---
