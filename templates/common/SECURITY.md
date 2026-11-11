@@ -1,6 +1,6 @@
 # Security Policy
 
-<!-- Ask agent to tweak the security policy based on context of a particular project (e.g., `package-lock.json` doesn't apply to Terraform) -->
+> **Template note:** Ask an agent to adapt this policy to the project. For example, `package-lock.json` does not apply to Terraform. Delete this note.
 
 ## Supply-Chain Hygiene
 

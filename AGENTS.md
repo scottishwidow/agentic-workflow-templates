@@ -10,22 +10,17 @@ This project contains reusable templates of Markdown files used in agentic workf
 
 ### Template directories
 
-| Directory | Target | Content |
-|---|---|---|
-| `templates/common/` | Root of a target repo | Sections for the `AGENTS.md` / `CLAUDE.md` of a repo, and supporting files. Copy the files, then keep only the sections that apply to the repo. |
-| `templates/global/` | User-level agent configuration directory, for example `~/.claude/` | Rules that apply to the whole system, in every project. |
-| `templates/obsidian/` | Folder in an Obsidian vault | Note-structure rules. |
+| Directory             | Target                                                             | Content                                                                                                                                         |
+| --------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `templates/common/`   | Root of a target repo                                              | Sections for the `AGENTS.md` / `CLAUDE.md` of a repo, and supporting files. Copy the files, then keep only the sections that apply to the repo. |
+| `templates/global/`   | User-level agent configuration directory, for example `~/.claude/` | Rules that apply to the whole system, in every project.                                                                                         |
+| `templates/obsidian/` | Folder in an Obsidian vault                                        | Note-structure rules.                                                                                                                           |
 
 ### Editing templates
 
 - Put a rule in `templates/global/` only when it applies at system level, outside any single repo.
-- In `templates/common/AGENTS.md`, put a project-agnostic rule outside the marker blocks. Put a rule for one project type inside a marker block, after the `---` divider at the end of the file:
-
-  ```markdown
-  <!-- BEGIN: <Type> projects -->
-  ...
-  <!-- END: <Type> projects -->
-  ```
+- In `templates/common/AGENTS.md`, put a project-agnostic rule above the `---` divider. Put a rule for one project type in its own `##` section after the divider. Start that section with a `Template note:` that says which projects keep it.
+- Never use HTML comments (`<!-- -->`) for template markers or instructions. Renderers hide them. Write each one as a visible blockquote that starts with `> **Template note:**`, and end it with "Delete this note." An agent removes every `Template note:` line after it fills the template.
 
 ## User Interaction & Documentation Standards
 

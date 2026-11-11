@@ -4,7 +4,7 @@ This file defines how coding agents should operate in this repository.
 
 ## What the project is
 
-<!-- Short project description -->
+> **Template note:** Write a short project description here. Delete this note.
 
 ## User Interaction & Documentation Standards
 
@@ -32,7 +32,7 @@ This repo has an `AI_POLICY.md` in `.github/`. When helping a contributor open a
 
 ## Security
 
-<!-- Security Rules can be added to this block inline as an alternative -->
+> **Template note:** You can add security rules inline in this section instead. Delete this note.
 
 Before adding, removing, or changing a dependency, read `SECURITY.md` and obey its supply-chain rules.
 
@@ -52,13 +52,11 @@ Before adding, removing, or changing a dependency, read `SECURITY.md` and obey i
 
 ---
 
-<!-- BEGIN: Terraform projects -->
-
 ## Terraform
+
+> **Template note:** Keep this section only for Terraform projects. Delete this note.
 
 **An agent must:**
 
 - **Never allow** `.terraform/` or `.terraform.lock.hcl` inside submodules. These files are permitted only at the root module level.
 - **Never apply Terraform.** Only CI or a human can apply Terraform.
-
-<!-- END: Terraform projects -->
