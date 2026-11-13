@@ -60,3 +60,5 @@ Before adding, removing, or changing a dependency, read `SECURITY.md` and obey i
 
 - **Never allow** `.terraform/` or `.terraform.lock.hcl` inside submodules. These files are permitted only at the root module level.
 - **Never apply Terraform.** Only CI or a human can apply Terraform.
+- **Never create** standalone resources in root modules. Use an existing submodule or an open-source module (for example, [terraform-aws-modules](https://registry.terraform.io/namespaces/terraform-aws-modules)).
+- **Create a custom submodule** only if no open-source module meets the need.
